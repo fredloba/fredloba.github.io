@@ -1,0 +1,48 @@
+.container {
+    width: 50rem;
+    height: 20rem;
+    position: relative;
+    background-color: #f0f0f0;
+    border: 2px solid #763C8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-container {
+    z-index: 2;
+    position: absolute;
+}
+
+.mo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.lttr {
+    fill: #763C8C;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sound {
+    position: fixed;
+    color: #763C8C;
+    font-size: 1.6rem;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sound--off {
+    text-decoration: line-through;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedication to Zack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="svg-container">
+            <svg class="mo-container" viewBox="0 0 100 40">
+                <path class="line" d="M10,20 L90,20"></path>
+                <text x="50%" y="25" text-anchor="middle" class="lttr">Zack</text>
+            </svg>
+        </div>
+        <div class="sound sound--off" onclick="toggleSound()">Sound Off</div>
+    </div>
+
+    <script>
+        function toggleSound() {
+            const soundElement = document.querySelector('.sound');
+            if (soundElement.classList.contains('sound--off')) {
+                soundElement.classList.remove('sound--off');
+                soundElement.textContent = 'Sound On';
+                // Add functionality to turn sound on
+            } else {
+                soundElement.classList.add('sound--off');
+                soundElement.textContent = 'Sound Off';
+                // Add functionality to turn sound off
+            }
+        }
+    </script>
+</body>
+</html>
